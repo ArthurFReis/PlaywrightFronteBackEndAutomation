@@ -27,6 +27,8 @@ test.describe.parallel('Login', () => {
      
   });
 
+
+
     test('Teste usuarios testando o método limpar campos', async ({ page }) => {
       let errors = {"users": ["standard_user1", "stendard", ""], "senha": "secret_sauce"};
       for(const user in errors.users){
@@ -61,7 +63,12 @@ test.describe.parallel('Login', () => {
         await page.click('#login-button');
         await page.reload()
       }
+
+      console.log("======================================================================================================================== \n")
+      console.log("Começa os erros do password! \n");
   });
+
+  
 
    test('Teste  password testando o método limpar campos', async ({ page }) => {
       let errors = {"password": ["secret_sauce1", "", "secret"], "user": "standard_user"};
@@ -97,6 +104,8 @@ test.describe.parallel('Login', () => {
         await page.click('#login-button');
         await page.reload()
       }
+      console.log("======================================================================================================================== \n")
+      console.log("Começa os tipos de login! \n");
   });
 
 });

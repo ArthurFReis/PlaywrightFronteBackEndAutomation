@@ -9,4 +9,6 @@ export async function pageResponsivoLogin(page: Page) {
       await page.screenshot({path: `Evidencias/login/Responsivo/home-mobile-${tamanhos.nomes[tamanho]}.png`});
     }
      console.log("É responsivo! \n");
+     console.log("======================================================================================================================== \n");
+      console.log("Começa os erros do usuário! \n");
 }
