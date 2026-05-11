@@ -63,4 +63,40 @@ test.describe.parallel('Login', () => {
       }
   });
 
+   test('Teste  password testando o método limpar campos', async ({ page }) => {
+      let errors = {"password": ["secret_sauce1", "", "secret"], "user": "standard_user"};
+      for(const user in errors.password){
+        await page.fill('input[placeholder="Username"]', errors.user);
+        await page.fill('input[placeholder="Password"]', errors.password[user]);
+        await page.click('#login-button');
+        let erroMessage = await page.locator('h3[data-test="error"]').innerText();
+        console.log('Erros do método limpar campos: ', erroMessage);
+        await page.screenshot({path: `Evidencias/login/TestandoPassword/Clean/usuarioErroClean-${errors.password[user]}.png`});
+        await page.getByPlaceholder('Username').clear();
+        await page.getByPlaceholder('Password').clear();
+        await page.fill('input[placeholder="Username"]', errors.user);
+        await page.fill('input[placeholder="Password"]', errors.password[user]);
+        await page.click('#login-button');
+        await page.getByPlaceholder('Username').clear();
+        await page.getByPlaceholder('Password').clear();
+      }
+  });
+
+     test('Teste password testando o método refresh da página', async ({ page }) => {
+      let errors = {"password": ["secret_sauce1", "", "secret"], "user": "standard_user"};
+      for(const user in errors.password){
+        await page.fill('input[placeholder="Username"]', errors.user);
+        await page.fill('input[placeholder="Password"]', errors.password[user]);
+        await page.click('#login-button');
+        let erroMessage = await page.locator('h3[data-test="error"]').innerText();
+        console.log('Erros do método refresh da página: ' + erroMessage);
+        await page.screenshot({path: `Evidencias/login/TestandoPassword/Refresh/usuarioErroRefresh-${errors.password[user]}.png`});
+        await page.reload()
+        await page.fill('input[placeholder="Username"]', errors.user);
+        await page.fill('input[placeholder="Password"]', errors.password[user]);
+        await page.click('#login-button');
+        await page.reload()
+      }
+  });
+
 });
