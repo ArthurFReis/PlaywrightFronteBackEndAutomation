@@ -1,6 +1,18 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="8.059077000000514">
-<testsuite name="tests\FrontEnd.spec.ts" timestamp="2026-05-12T10:53:09.704Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.334" errors="0">
-<testcase name="Login › Logout" classname="tests\FrontEnd.spec.ts" time="4.334">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="4.876468999999576">
+<testsuite name="tests\BackEnd.spec.ts" timestamp="2026-05-12T11:18:34.503Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.385" errors="0">
+<testcase name="API com paralelo › tipos de teste de backend" classname="tests\BackEnd.spec.ts" time="1.385">
+<system-out>
+<![CDATA[[33m200[39m
+{
+  cep: [32m'89010025'[39m,
+  state: [32m'SC'[39m,
+  city: [32m'Blumenau'[39m,
+  neighborhood: [32m'Centro'[39m,
+  street: [32m'Rua Doutor Luiz de Freitas Melro'[39m,
+  service: [32m'open-cep'[39m
+}
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
