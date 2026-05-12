@@ -10,7 +10,6 @@ test.beforeEach(async ({ page }) => {
 
 test.describe.parallel('Login', () => {
   
-
   test('Teste de preenchimento correto', async ({ page }) => {
      await pageResponsivoLogin(page);
      await page.fill('input[placeholder="Username"]', 'standard_user');
@@ -26,8 +25,6 @@ test.describe.parallel('Login', () => {
      
      await pageResponsivoLogin(page);
   });
-
-
 
     test('Teste usuarios testando o método limpar campos', async ({ page }) => {
       let errors = {"users": ["standard_user1", "stendard", ""], "senha": "secret_sauce"};
