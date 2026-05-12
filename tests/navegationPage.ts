@@ -13,15 +13,5 @@ export class NavegationPage {
         await this.page.goto('https://www.saucedemo.com/');
         await expect(this.page).toHaveURL('https://www.saucedemo.com/');
     }
-    
-    async brasilApibanks(){
-        await this.page.goto('https://brasilapi.com.br/api//banks/v1');
-        await expect(this.page).toHaveURL('https://brasilapi.com.br/api//banks/v1');
-    }
 
-    async brasilApiCep(){
-        await this.page.goto('https://brasilapi.com.br/api/cep/v1/89010025');
-        await expect(this.page).toHaveURL('https://brasilapi.com.br/api/cep/v1/89010025');
-    }
-
-    } 
+} 
