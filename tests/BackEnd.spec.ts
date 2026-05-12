@@ -20,7 +20,7 @@ test.describe.parallel("API com paralelo", () => {
                 expect(response3.status()).toBe(200);
                 break; 
 
-            case 4:
+            case 3:
                 const response4 = await request.get(`${site}/cep/v1/89010025`);
                 expect(response4.status()).toBe(200);
                 const responsebody = JSON.parse(await response4.text());
