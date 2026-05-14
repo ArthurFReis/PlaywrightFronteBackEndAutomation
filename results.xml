@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="4.940200000000186">
-<testsuite name="tests\FrontEnd.spec.ts" timestamp="2026-05-14T11:06:10.173Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.018" errors="0">
-<testcase name="Login › Teste usuarios testando o método limpar campos" classname="tests\FrontEnd.spec.ts" time="2.018">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="7.114135999999941">
+<testsuite name="tests\FrontEnd.spec.ts" timestamp="2026-05-14T11:09:24.148Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.061" errors="0">
+<testcase name="Login › Teste usuarios testando o método limpar campos" classname="tests\FrontEnd.spec.ts" time="4.061">
 <system-out>
 <![CDATA[Erros do método limpar campos:  Epic sadface: Username and password do not match any user in this service
 Erros do método limpar campos:  Epic sadface: Username and password do not match any user in this service
