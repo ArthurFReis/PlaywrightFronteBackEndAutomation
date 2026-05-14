@@ -1,12 +1,99 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="7.114135999999941">
-<testsuite name="tests\FrontEnd.spec.ts" timestamp="2026-05-14T11:09:24.148Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.061" errors="0">
-<testcase name="Login › Teste usuarios testando o método limpar campos" classname="tests\FrontEnd.spec.ts" time="4.061">
+<testsuites id="" name="" tests="7" failures="0" skipped="0" errors="0" time="22.327653000000005">
+<testsuite name="tests\FrontEnd.spec.ts" timestamp="2026-05-14T19:09:11.224Z" hostname="chromium" tests="7" failures="0" skipped="0" time="19.01" errors="0">
+<testcase name="Login › Teste de preenchimento correto" classname="tests\FrontEnd.spec.ts" time="4.718">
+<system-out>
+<![CDATA[É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Teste usuarios testando o método limpar campos" classname="tests\FrontEnd.spec.ts" time="2.16">
 <system-out>
 <![CDATA[Erros do método limpar campos:  Epic sadface: Username and password do not match any user in this service
 Erros do método limpar campos:  Epic sadface: Username and password do not match any user in this service
 Erros do método limpar campos:  Epic sadface: Username is required
 ]]>
 </system-out>
+</testcase>
+<testcase name="Login › Teste usuarios testando o método refresh da página" classname="tests\FrontEnd.spec.ts" time="1.402">
+<system-out>
+<![CDATA[Erros do método refresh da página: Epic sadface: Username and password do not match any user in this service
+Erros do método refresh da página: Epic sadface: Username and password do not match any user in this service
+Erros do método refresh da página: Epic sadface: Username is required
+======================================================================================================================== 
+
+Começa os erros do password! 
+
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Teste  password testando o método limpar campos" classname="tests\FrontEnd.spec.ts" time="1.167">
+<system-out>
+<![CDATA[Erros do método limpar campos:  Epic sadface: Username and password do not match any user in this service
+Erros do método limpar campos:  Epic sadface: Password is required
+Erros do método limpar campos:  Epic sadface: Username and password do not match any user in this service
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Teste password testando o método refresh da página" classname="tests\FrontEnd.spec.ts" time="1.448">
+<system-out>
+<![CDATA[Erros do método refresh da página: Epic sadface: Username and password do not match any user in this service
+Erros do método refresh da página: Epic sadface: Password is required
+Erros do método refresh da página: Epic sadface: Username and password do not match any user in this service
+======================================================================================================================== 
+
+Começa os tipos de login! 
+
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Login tipos de usuário" classname="tests\FrontEnd.spec.ts" time="6.911">
+<system-out>
+<![CDATA[Erro do usuário locked_out_user: Epic sadface: Sorry, this user has been locked out.
+Tipo usuário 1 testado! 
+
+Tipo usuário 2 testado! 
+
+Tipo usuário 3 testado! 
+
+Tipo usuário 4 testado! 
+
+Tipo usuário 5 testado! 
+
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Logout" classname="tests\FrontEnd.spec.ts" time="1.204">
 </testcase>
 </testsuite>
 </testsuites>

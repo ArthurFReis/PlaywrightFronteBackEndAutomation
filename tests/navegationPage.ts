@@ -1,4 +1,5 @@
-import { Page, expect, Locator, GetByPlaceHolder } from "@playwright/test";
+import { Page, expect, Locator, GetByPlaceHolder} from "@playwright/test";
+
 export class NavegationPage {
   readonly page: Page;
 

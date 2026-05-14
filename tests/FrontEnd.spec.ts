@@ -2,6 +2,7 @@ import { test, expect, Page } from "@playwright/test";
 import { pageResponsivoLogin } from "./login";
 import { NavegationPage } from "./navegationPage";
 
+
 test.beforeEach(async ({ page }) => {
   let navigationPage = new NavegationPage(page);
   await navigationPage.saucedemo();
