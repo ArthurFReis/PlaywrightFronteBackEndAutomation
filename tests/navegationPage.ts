@@ -7,6 +7,7 @@ import { Page, expect, Locator, ScreenshotMode, GetByPlaceHolder } from '@playwr
 export class NavegationPage {
     
     readonly page: Page;
+    
     readonly userename: Locator;
     readonly password: Locator;
     readonly loginButton: Locator;
