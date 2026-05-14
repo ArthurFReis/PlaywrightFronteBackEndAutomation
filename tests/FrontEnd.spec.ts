@@ -9,13 +9,16 @@ test.beforeEach(async ({ page }) => {
 });
 
 test.describe.parallel('Login', () => {
+
+  
   
   test('Teste de preenchimento correto', async ({ page }) => {
+    let navigationPage = new NavegationPage(page);
      await pageResponsivoLogin(page);
-     await page.fill('input[placeholder="Username"]', 'standard_user');
-     await page.fill('input[placeholder="Password"]', 'secret_sauce');
-     if ((await page.getByRole('button').isVisible()) && (await page.getByRole('button').isEnabled())) {
-      await page.click('#login-button');
+     await navigationPage.userename.fill('standard_user');
+     await navigationPage.password.fill('secret_sauce');
+     if ((await navigationPage.loginButton.isVisible()) && (await await navigationPage.loginButton.isEnabled())) {
+      await await navigationPage.loginButton.click();
       await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html'); 
       await page.screenshot({path: "Evidencias/login/Correto/preenchimentoCorretoTotal.png"});
      } 

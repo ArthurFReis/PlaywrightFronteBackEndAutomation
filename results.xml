@@ -1,17 +1,38 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="32.167656000000015">
-<testsuite name="tests\FrontEnd.spec.ts" timestamp="2026-05-13T10:16:51.292Z" hostname="chromium" tests="1" failures="0" skipped="0" time="29.143" errors="0">
-<testcase name="Login › Login tipos de usuário" classname="tests\FrontEnd.spec.ts" time="29.143">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="5.695090000000084">
+<testsuite name="tests\FrontEnd.spec.ts" timestamp="2026-05-14T09:50:42.017Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.575" errors="0">
+<testcase name="Login › Teste de preenchimento correto" classname="tests\FrontEnd.spec.ts" time="2.575">
 <system-out>
-<![CDATA[Erro do usuário locked_out_user: Epic sadface: Sorry, this user has been locked out.
-Tipo usuário 1 testado! 
+<![CDATA[É responsivo! 
 
-Tipo usuário 2 testado! 
+======================================================================================================================== 
 
-Tipo usuário 3 testado! 
+É responsivo! 
 
-Tipo usuário 4 testado! 
+======================================================================================================================== 
 
-Tipo usuário 5 testado! 
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
 
 ]]>
 </system-out>
