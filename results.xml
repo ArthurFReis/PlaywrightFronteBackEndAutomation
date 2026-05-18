@@ -1,6 +1,118 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="6.379582000000402">
-<testsuite name="tests\FrontEnd.spec.ts" timestamp="2026-05-18T14:11:46.204Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.612" errors="0">
-<testcase name="Login › Teste no inventory adicionar produto" classname="tests\FrontEnd.spec.ts" time="3.612">
+<testsuites id="" name="" tests="9" failures="1" skipped="0" errors="0" time="44.43580000000075">
+<testsuite name="tests\FrontEnd.spec.ts" timestamp="2026-05-18T14:28:59.005Z" hostname="chromium" tests="9" failures="1" skipped="0" time="38.884" errors="0">
+<testcase name="Login › Teste de preenchimento correto" classname="tests\FrontEnd.spec.ts" time="4.674">
+<system-out>
+<![CDATA[É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+É responsivo! 
+
+======================================================================================================================== 
+
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Teste usuarios testando o método limpar campos" classname="tests\FrontEnd.spec.ts" time="2.003">
+<system-out>
+<![CDATA[Erros do método limpar campos:  Epic sadface: Username and password do not match any user in this service
+Erros do método limpar campos:  Epic sadface: Username and password do not match any user in this service
+Erros do método limpar campos:  Epic sadface: Username is required
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Teste usuarios testando o método refresh da página" classname="tests\FrontEnd.spec.ts" time="1.351">
+<system-out>
+<![CDATA[Erros do método refresh da página: Epic sadface: Username and password do not match any user in this service
+Erros do método refresh da página: Epic sadface: Username and password do not match any user in this service
+Erros do método refresh da página: Epic sadface: Username is required
+======================================================================================================================== 
+
+Começa os erros do password! 
+
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Teste  password testando o método limpar campos" classname="tests\FrontEnd.spec.ts" time="1.048">
+<system-out>
+<![CDATA[Erros do método limpar campos:  Epic sadface: Username and password do not match any user in this service
+Erros do método limpar campos:  Epic sadface: Password is required
+Erros do método limpar campos:  Epic sadface: Username and password do not match any user in this service
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Teste password testando o método refresh da página" classname="tests\FrontEnd.spec.ts" time="1.258">
+<system-out>
+<![CDATA[Erros do método refresh da página: Epic sadface: Username and password do not match any user in this service
+Erros do método refresh da página: Epic sadface: Password is required
+Erros do método refresh da página: Epic sadface: Username and password do not match any user in this service
+======================================================================================================================== 
+
+Começa os tipos de login! 
+
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Login tipos de usuário" classname="tests\FrontEnd.spec.ts" time="19.393">
+<failure message="FrontEnd.spec.ts:139:7 Login tipos de usuário" type="FAILURE">
+<![CDATA[  [chromium] › tests\FrontEnd.spec.ts:139:7 › Login › Login tipos de usuário ───────────────────────
+
+    Error: locator.innerText: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('h3[data-test="error"]')
+
+
+      162 |           let erroMessage1 = await page
+      163 |             .locator('h3[data-test="error"]')
+    > 164 |             .innerText();
+          |              ^
+      165 |           console.log("Erro do usuário problem_user: " + erroMessage1);
+      166 |           await page.screenshot({
+      167 |             path: "Evidencias/login/TiposDeUsuario/usuarioProblem.png",
+        at C:\Users\013772631\OneDrive - IBM\Desktop\QA_Reskill\Projeto QA\tests\FrontEnd.spec.ts:164:14
+]]>
+</failure>
+<system-out>
+<![CDATA[Erro do usuário locked_out_user: Epic sadface: Sorry, this user has been locked out.
+Tipo usuário 1 testado! 
+
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Logout" classname="tests\FrontEnd.spec.ts" time="3.751">
+</testcase>
+<testcase name="Login › Teste no inventory pesquisar" classname="tests\FrontEnd.spec.ts" time="1.118">
+<system-out>
+<![CDATA[testado todos os tipos de pesquisa com sucesso! 
+
+]]>
+</system-out>
+</testcase>
+<testcase name="Login › Teste no inventory adicionar produto" classname="tests\FrontEnd.spec.ts" time="4.288">
 <system-out>
 <![CDATA[o carrirnho de compras está visível e habilitado! 
 

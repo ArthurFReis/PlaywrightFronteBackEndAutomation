@@ -304,6 +304,7 @@ test.describe.parallel("Login", () => {
             (await page.locator("#remove-sauce-labs-backpack").isVisible()) &&
             (await page.locator("#remove-sauce-labs-backpack").isEnabled())
           ) {
+
             produto.push("Sauce Labs Backpack");
 
             await page.screenshot({
