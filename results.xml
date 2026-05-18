@@ -1,34 +1,9 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="33.449927999999375">
-<testsuite name="tests\FrontEnd.spec.ts" timestamp="2026-05-15T18:14:44.634Z" hostname="chromium" tests="1" failures="1" skipped="0" time="30.035" errors="0">
-<testcase name="Login › Login tipos de usuário" classname="tests\FrontEnd.spec.ts" time="30.035">
-<failure message="FrontEnd.spec.ts:140:7 Login tipos de usuário" type="FAILURE">
-<![CDATA[  [chromium] › tests\FrontEnd.spec.ts:140:7 › Login › Login tipos de usuário ───────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    Error: locator.innerText: Test timeout of 30000ms exceeded.
-    Call log:
-      - waiting for locator('h3[data-test="error"]')
-
-
-      161 |           await page.fill('input[placeholder="Password"]', "secret_sauce");
-      162 |           await page.click("#login-button");
-    > 163 |           let erroMessage1 = await page.locator('h3[data-test="error"]').innerText();
-          |                                                                          ^
-      164 |           console.log('Erro do usuário problem_user: ' + erroMessage1);
-      165 |           await page.screenshot({
-      166 |             path: "Evidencias/login/TiposDeUsuario/usuarioProblem.png",
-        at C:\Users\013772631\OneDrive - IBM\Desktop\QA_Reskill\Projeto QA\tests\FrontEnd.spec.ts:163:74
-
-    Error Context: test-results\tests-FrontEnd-Login-Login-tipos-de-usuário-chromium\error-context.md
-]]>
-</failure>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="10.610109000000172">
+<testsuite name="tests\FrontEnd.spec.ts" timestamp="2026-05-18T11:40:30.937Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.723" errors="0">
+<testcase name="Login › Teste mo Inventory Pesquisar" classname="tests\FrontEnd.spec.ts" time="7.723">
 <system-out>
-<![CDATA[Erro do usuário locked_out_user: Epic sadface: Sorry, this user has been locked out.
-Tipo usuário 1 testado! 
+<![CDATA[testado todos os tipos de pesquisa com sucesso! 
 
-
-[[ATTACHMENT|test-results\tests-FrontEnd-Login-Login-tipos-de-usuário-chromium\error-context.md]]
 ]]>
 </system-out>
 </testcase>

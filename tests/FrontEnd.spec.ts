@@ -224,4 +224,46 @@ test.describe.parallel("Login", () => {
     await page.click("#logout_sidebar_link");
     await page.screenshot({ path: "Evidencias/login/loginout/logout.png" });
   });
+
+  test("Teste mo Inventory Pesquisar", async ({ page }) => {
+    let navigationPage = new NavegationPage(page);
+    await navigationPage.userename.fill("standard_user");
+      await navigationPage.password.fill("secret_sauce");
+      if (
+        (await navigationPage.loginButton.isVisible()) &&
+        (await navigationPage.loginButton.isEnabled())
+      ) {
+        await navigationPage.loginButton.click();
+        await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html");
+        
+      }
+       let tiposPesquisa = [1, 2, 3, 4];
+
+       for(let i = 0; i < tiposPesquisa.length; i++){
+
+        switch (tiposPesquisa[i]) {
+          case 1:
+            await page.locator('select').selectOption('az');
+            await page.screenshot({path: `Evidencias/login/Inventory/tipoPesquisaAZ-${tiposPesquisa[i]}.png`});
+            break;
+          case 2:
+             await page.locator('select').selectOption('za');
+             await page.screenshot({ path: `Evidencias/login/Inventory/tipoPesquisaZA-${tiposPesquisa[i]}.png` });
+             break;
+          case 3:
+             await page.locator('select').selectOption('lohi');
+             await page.screenshot({ path: `Evidencias/login/Inventory/tipoPesquisaPriceCrescente-${tiposPesquisa[i]}.png` });
+             break;
+          case 4:
+            await page.locator('select').selectOption('hilo');
+             await page.screenshot({ path: `Evidencias/login/Inventory/tipoPesquisaPriceDecrescente-${tiposPesquisa[i]}.png`  });
+             break;
+             default:
+              console.log("Tipo de pesquisa inválida! \n");
+        }
+        
+      }
+      console.log("testado todos os tipos de pesquisa com sucesso! \n");  
+  });
+
 });
