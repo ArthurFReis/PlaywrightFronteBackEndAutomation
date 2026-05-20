@@ -56,4 +56,10 @@ test.describe.parallel("API com paralelo", () => {
     console.log("Login erro de password, status: ", response.status());
   });
 
+ test("Bancos em geral a validação errada", async ({ request, page }) => {
+    const site = "https://www.saucedemo.com";
+    const response = await request.get(`${site}/inventory.html`);
+    expect(response.status()).toBe(200);
+  });
+
 });

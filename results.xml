@@ -1,88 +1,22 @@
-<testsuites id="" name="" tests="5" failures="4" skipped="0" errors="0" time="11.317967999999878">
-<testsuite name="tests\BackEndSoucedemoAPI.spec.ts" timestamp="2026-05-20T09:48:47.830Z" hostname="chromium" tests="5" failures="4" skipped="0" time="3.575" errors="0">
-<testcase name="API com paralelo › Login correto metodo errado" classname="tests\BackEndSoucedemoAPI.spec.ts" time="1.149">
-<failure message="BackEndSoucedemoAPI.spec.ts:4:7 Login correto metodo errado" type="FAILURE">
-<![CDATA[  [chromium] › tests\BackEndSoucedemoAPI.spec.ts:4:7 › API com paralelo › Login correto metodo errado 
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="3.9633679999997837">
+<testsuite name="tests\BackEndSoucedemoAPI.spec.ts" timestamp="2026-05-20T10:56:27.472Z" hostname="chromium" tests="1" failures="1" skipped="0" time="1.137" errors="0">
+<testcase name="API com paralelo › Bancos em geral a validação errada" classname="tests\BackEndSoucedemoAPI.spec.ts" time="1.137">
+<failure message="BackEndSoucedemoAPI.spec.ts:59:6 Bancos em geral a validação errada" type="FAILURE">
+<![CDATA[  [chromium] › tests\BackEndSoucedemoAPI.spec.ts:59:6 › API com paralelo › Bancos em geral a validação errada 
 
     Error: expect(received).toBe(expected) // Object.is equality
 
     Expected: 200
-    Received: 405
+    Received: 404
 
-       9 |       },
-      10 |     });
-    > 11 |     expect(response.status()).toBe(200);
+      60 |     const site = "https://www.saucedemo.com";
+      61 |     const response = await request.get(`${site}/inventory.html`);
+    > 62 |     expect(response.status()).toBe(200);
          |                               ^
-      12 |     console.log("Login correto, status: ", response.status());
-      13 |   });
-      14 |
-        at C:\Users\013772631\OneDrive - IBM\Desktop\QA_Reskill\Projeto QA\tests\BackEndSoucedemoAPI.spec.ts:11:31
-]]>
-</failure>
-</testcase>
-<testcase name="API com paralelo › Login correto" classname="tests\BackEndSoucedemoAPI.spec.ts" time="0.61">
-<system-out>
-<![CDATA[Login correto, status:  [33m200[39m
-]]>
-</system-out>
-</testcase>
-<testcase name="API com paralelo › Login Erro de status" classname="tests\BackEndSoucedemoAPI.spec.ts" time="0.883">
-<failure message="BackEndSoucedemoAPI.spec.ts:26:7 Login Erro de status" type="FAILURE">
-<![CDATA[  [chromium] › tests\BackEndSoucedemoAPI.spec.ts:26:7 › API com paralelo › Login Erro de status ────
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: 400
-    Received: 200
-
-      31 |       },
-      32 |     });
-    > 33 |     expect(response.status()).toBe(400);
-         |                               ^
-      34 |     console.log("Login erro de status, status: ", response.status());
-      35 |   });
-      36 |
-        at C:\Users\013772631\OneDrive - IBM\Desktop\QA_Reskill\Projeto QA\tests\BackEndSoucedemoAPI.spec.ts:33:31
-]]>
-</failure>
-</testcase>
-<testcase name="API com paralelo › Login erro de usuário" classname="tests\BackEndSoucedemoAPI.spec.ts" time="0.452">
-<failure message="BackEndSoucedemoAPI.spec.ts:37:7 Login erro de usuário" type="FAILURE">
-<![CDATA[  [chromium] › tests\BackEndSoucedemoAPI.spec.ts:37:7 › API com paralelo › Login erro de usuário ───
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: 403
-    Received: 200
-
-      42 |       },
-      43 |     });
-    > 44 |     expect(response.status()).toBe(403);
-         |                               ^
-      45 |     console.log("Login erro de usuário, status: ", response.status());
-      46 |   });
-      47 |
-        at C:\Users\013772631\OneDrive - IBM\Desktop\QA_Reskill\Projeto QA\tests\BackEndSoucedemoAPI.spec.ts:44:31
-]]>
-</failure>
-</testcase>
-<testcase name="API com paralelo › Login erro de password" classname="tests\BackEndSoucedemoAPI.spec.ts" time="0.481">
-<failure message="BackEndSoucedemoAPI.spec.ts:48:7 Login erro de password" type="FAILURE">
-<![CDATA[  [chromium] › tests\BackEndSoucedemoAPI.spec.ts:48:7 › API com paralelo › Login erro de password ──
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: 403
-    Received: 200
-
-      53 |       },
-      54 |     });
-    > 55 |     expect(response.status()).toBe(403);
-         |                               ^
-      56 |     console.log("Login erro de password, status: ", response.status());
-      57 |   });
-      58 |
-        at C:\Users\013772631\OneDrive - IBM\Desktop\QA_Reskill\Projeto QA\tests\BackEndSoucedemoAPI.spec.ts:55:31
+      63 |   });
+      64 |
+      65 | });
+        at C:\Users\013772631\OneDrive - IBM\Desktop\QA_Reskill\Projeto QA\tests\BackEndSoucedemoAPI.spec.ts:62:31
 ]]>
 </failure>
 </testcase>
