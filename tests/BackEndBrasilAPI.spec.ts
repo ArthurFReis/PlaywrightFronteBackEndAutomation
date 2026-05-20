@@ -39,7 +39,7 @@ test.describe.parallel("API com paralelo", () => {
 
   test("Teste de dados diferentes", async ({ request, page }) => {
     const site = "https://brasilapi.com.br/api";
-    let dados = { "cep": "89010025", "state": "SC", "city": "Blumenau", "neighborhood": "Centro", "street": "Rua Doutor Luiz de Freitas Melro", "service": "open-cep" };
+    let dados: any = { "cep": "89010025", "state": "SC", "city": "Blumenau", "neighborhood": "Centro", "street": "Rua Doutor Luiz de Freitas Melro", "service": "open-cep" };
     for(let dado in dados){
       const response = await request.get(`${site}/cep/v1/${dados[dado]}`);
       console.log("O status de cada requisição é: " + response.status());
