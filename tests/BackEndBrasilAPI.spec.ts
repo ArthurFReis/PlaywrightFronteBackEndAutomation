@@ -42,9 +42,10 @@ test.describe.parallel("API com paralelo", () => {
     let dados: any = { "cep": "89010025", "state": "SC", "city": "Blumenau", "neighborhood": "Centro", "street": "Rua Doutor Luiz de Freitas Melro", "service": "open-cep" };
     for(let dado in dados){
       const response = await request.get(`${site}/cep/v1/${dados[dado]}`);
-      console.log("O status de cada requisição é: " + response.status());
+      console.log("O status de cada requisição é: " + response.status());  
     }
+    console.log("\n")
 
   });
-  
+
 });

@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="4.6182160000000145">
-<testsuite name="tests\BackEndBrasilAPI.spec.ts" timestamp="2026-05-20T13:06:06.451Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.548" errors="0">
-<testcase name="API com paralelo › Teste de dados diferentes" classname="tests\BackEndBrasilAPI.spec.ts" time="1.548">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="4.570771999999881">
+<testsuite name="tests\BackEndBrasilAPI.spec.ts" timestamp="2026-05-20T13:09:35.676Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.429" errors="0">
+<testcase name="API com paralelo › Teste de dados diferentes" classname="tests\BackEndBrasilAPI.spec.ts" time="1.429">
 <system-out>
 <![CDATA[O status de cada requisição é: 200
 O status de cada requisição é: 400
@@ -8,6 +8,8 @@ O status de cada requisição é: 400
 O status de cada requisição é: 400
 O status de cada requisição é: 400
 O status de cada requisição é: 400
+
+
 ]]>
 </system-out>
 </testcase>
