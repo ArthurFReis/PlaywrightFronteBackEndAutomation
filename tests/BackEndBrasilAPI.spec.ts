@@ -44,6 +44,5 @@ test.describe.parallel("API com paralelo", () => {
       const response = await request.get(`${site}/cep/v1/${dados[dado]}`);
       console.log("O status de cada requisição é: " + response.status());
     }
-    
   });
 });
